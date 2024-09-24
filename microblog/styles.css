@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.my-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#login-form, #user-dashboard {
+    margin-bottom: 20px;
+}
+
+#login-form input, #user-dashboard textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#feed ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#feed li {
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#feed li p {
+    margin: 0;
+}
+
+#feed li small {
+    color: #666;
+}
+
+#feed li button {
+    margin-right: 10px;
+}
+
+#feed li textarea {
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#feed li ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#feed li ul li {
+    background-color: #eee;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+}
