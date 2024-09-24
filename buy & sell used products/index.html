@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy & Sell Used Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Buy & Sell Used Products</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="homeLink">Home</a></li>
+                <li><a href="#" id="buyLink">Buy</a></li>
+                <li><a href="#" id="sellLink">Sell</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="content-section">
+            <center>
+            <h2>Welcome to Classifieds Buy & Sell Used Products</h2>
+            <p>Find the best deals on products you love.</p>
+            </center>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            <div class="slideshow">
+                <div class="images">
+                    <img src="image1.jpeg" alt="Image 1">
+                    <img src="image2.jpeg" alt="Image 2">
+                    <img src="image3.jpeg" alt="Image 3">
+
+                    <img src="image1.jpeg" alt="Image 1">
+                    <img src="image2.jpeg" alt="Image 2">
+                    <img src="image3.jpeg" alt="Image 3">
+                </div>
+            </div>
+          
+        </section>
+        <section id="buy" class="content-section" >
+            <h2>Buy Products</h2>
+            <div id="listings">
+                <!-- Listings will be dynamically added here -->
+            </div>
+        </section>
+        <section id="sell" class="content-section">
+            <h2>Sell Your Product</h2>
+            <form id="sellForm">
+                <center>
+                    <ul>
+                        <li><input type="text" id="productName" placeholder="Product Name" required></li>
+                        <li><input type="text" id="productPrice" placeholder="Product Price" required></li>
+                        <li><textarea id="productDescription" placeholder="Product Description" required></textarea></li>
+                        <li><button type="submit">Submit</button></li>
+                    </ul>
+                </center>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Buy & Sell Used products. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
