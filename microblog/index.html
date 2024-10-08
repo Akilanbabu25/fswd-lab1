@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Microblogging App</title>
+</head>
+<body>
+<center>
+    
+    <header>
+        <h1>Microblogging App</h1>
+    </header>
+<div class="container" >
+    <main>
+        <div id="login-form" class="form-container">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button id="login-btn">Login</button>
+            <p id="login-error" class="hidden error-message">Please enter a username and password</p>
+        </div>
+        
+        <div id="user-dashboard" class="form-container hidden">
+            <h2>Welcome, <span id="user-username"></span>!</h2>
+            <textarea id="post-content" placeholder="Write your post..." required></textarea>
+            <input type="file" id="post-image" accept="image/*">
+            <button id="post-btn">Post</button>
+            <p id="post-error" class="hidden error-message">Please write something to post</p>
+            <button id="logout-btn">Logout</button>
+        </div>
+        
+        <div id="feed" class="hidden">
+            <h2>Feed</h2>
+            <p id="post-count">Total Posts: 0</p> <!-- Added Post Count -->
+            <ul id="post-list"></ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Microblogging App. All rights reserved.</p>
+    </footer>
+</div>
+</center>
+    <script src="app.js"></script>
+</body>
+</html>
