@@ -4,45 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INDEX</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9ecef;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+        }
+
+        p{
+            color: #007BFF;
+        }
+
+        h1 {
+            color: #007BFF;
+        }
+
+        h3 {
+            color: #6c757d;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 20px;
+        }
+
+        .styled-button {
+            background: linear-gradient(135deg, #6f86d6, #48c6ef);
+            border: none;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .styled-button a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .styled-button:hover {
+            background: linear-gradient(135deg, #48c6ef, #6f86d6);
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body>
-    <center>
-    <h1>INDEX PAGE</h1>
-    <h3>Full-Stack-Web-Development-Lab</h3>
-    <p>List of Experiments :</p>
-    </center>
-    <ul>
-        <li><h2>Portfolio</h2></li>
-            <button style="background: #f7ff64;">
-                <a href="portfolio/portfolio.html">portfolio</a>
+    <div class="container">
+        <h1>INDEX PAGE</h1>
+        <h3>Full-Stack-Web-Development-Lab</h3>
+        <h3>By Akilanbabu</h3>
+        <p>List of Experiments:</p>
+        <ul>
+            <li><h2>Portfolio</h2></li>
+            <button class="styled-button">
+                <a href="portfolio/portfolio.html">Portfolio</a>
             </button>
-        
-        <li><h2>Todolist</h2></li>
-            <button style="background: #f7ff64;">
-                <a href="to do list/todolist.html">todolist</a>
+            <li><h2>Todolist</h2></li>
+            <button class="styled-button">
+                <a href="to do list/todolist.html">Todolist</a>
             </button>
-
-        <li><h2>Microblog</h2></li>
-            <button style="background: #f7ff64;">
-                <a href="microblog/index.html">microblog</a>
+            <li><h2>Microblog</h2></li>
+            <button class="styled-button">
+                <a href="microblog/index.html">Microblog</a>
             </button>
-        
-        <li><h2>Food Delivery</h2></li>
-            <button style="background: #f7ff64;">
-                <a href="food delivery/food delivery.html">food delivery</a>
+            <li><h2>Food Delivery</h2></li>
+            <button class="styled-button">
+                <a href="food delivery/food delivery.html">Food Delivery</a>
             </button>
-
-        <li><h2>Buy & Sell Used Products</h2></li>
-            <button style="background: #f7ff64;">
-                <a href="buy & sell used products/index.html">buy & sell used products</a>
-            </button>  
-
-        <li><h2>Leave Management System</h2></li>
-            <button style="background: #f7ff64;">
-                <a href="leave management system/index.html">leave management system</a>
-            </button> 
-
-
-    </ul> 
+            <li><h2>Buy & Sell Used Products</h2></li>
+            <button class="styled-button">
+                <a href="buy & sell used products/index.html">Buy & Sell Used Products</a>
+            </button>
+            <li><h2>Leave Management System</h2></li>
+            <button class="styled-button">
+                <a href="leave management system/index.html">Leave Management System</a>
+            </button>
+        </ul>
+    </div>
 </body>
 </html>
