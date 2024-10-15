@@ -12,7 +12,7 @@ document.getElementById('login-btn').addEventListener('click', function() {
     const username = usernameInput.value.trim();
     const password = passwordInput.value.trim();
 
-    if (username && password === "password") {
+    if (username =="akilan" && password === "password") {
         document.getElementById('user-username').textContent = username;
         document.getElementById('login-form').classList.add('hidden');
         document.getElementById('user-dashboard').classList.remove('hidden');
