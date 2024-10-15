@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Leave Management System</h1>
+        
+        <div id="login" class="form-container">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <div id="leave" class="form-container" style="display: none;">
+            <h2>Apply for Leave</h2>
+            <form id="leaveForm" enctype="multipart/form-data">
+                <label for="leaveType">Leave Type:</label>
+                <select id="leaveType" name="leaveType">
+                    <option value="casual">Casual Leave</option>
+                    <option value="medical">Medical Leave</option>
+                </select>
+                <label for="leaveDays">Number of Days:</label>
+                <input type="number" id="leaveDays" name="leaveDays" required>
+                <label for="leaveLetter">Attach Leave Letter:</label>
+                <input type="file" id="leaveLetter" name="leaveLetter" required>
+                <button type="submit">Apply</button>
+            </form>
+        </div>
+
+        <div id="balance" style="display: none;">
+            <h2>Leave Balance</h2>
+            <button id="viewBalanceButton">View Leave Balance</button>
+            <div id="leaveBalance"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
