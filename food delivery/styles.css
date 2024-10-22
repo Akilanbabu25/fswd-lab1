@@ -1,0 +1,201 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Lobster', cursive;
+}
+#welcome-banner {
+    text-align: center; /* Center text horizontally */
+}
+
+#auth button {
+    background-color: white;
+    color: #007bff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#auth button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+#restaurants {
+    padding: 20px;
+}
+
+h2 {
+    color: #007bff;
+}
+
+.restaurant {
+    margin-bottom: 40px;
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.food-item {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.food-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.order-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.order-btn:hover {
+    background-color: #0056b3;
+}
+
+#order-summary, #customer-details, #payment {
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+}
+/* Delivery Details Section */
+#customer-details h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+#customer-details form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#customer-details label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#customer-details input, #customer-details textarea, #customer-details select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#customer-details textarea {
+    height: 80px;
+    resize: none;
+}
+
+.contact-wrapper {
+    display: flex;
+}
+
+.contact-wrapper select {
+    width: 20%;
+    margin-right: 10px;
+}
+
+#submit-details {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#submit-details:hover {
+    background-color: #0056b3;
+}
+
+/* Payment Section */
+#payment h2, #payment h3 {
+    color: #007bff;
+}
+
+#payment select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.payment-option {
+    margin-top: 20px;
+}
+
+.payment-option input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.upi-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.upi-btn:hover {
+    background-color: #0056b3;
+}
+
+#confirm-order {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#confirm-order:hover {
+    background-color: #0056b3;
+}

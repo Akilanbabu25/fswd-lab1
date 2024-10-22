@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Food Delivery</title>
+</head>
+<body>
+    <header>
+        <h1>😋  Hungry-Buddy 😋</h1>
+        <div id="auth">
+            <span id="user-info"></span>
+            <button id="login-btn">Login</button>
+            <button id="logout-btn" style="display:none;">Logout</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="welcome-banner">
+            <h2>Get Delicious Meals Delivered Fast!</h2>
+            <p>Explore the best restaurants and order your favorite dishes right to your door.</p>
+        </section>
+
+        <div id="restaurants">
+            <h2>Restaurants</h2>
+
+            <!-- Restaurant: Arabi -->
+            <div class="restaurant">
+                <h3>Arabi Restaurant</h3>
+                <div class="food-grid">
+                    <div class="food-item" data-price="150">
+                        <img src="briyani.jpg" alt="Biriyani">
+                        <p>Biriyani</p>
+                        <input type="number" class="quantity" value="1" min="1">
+                        <button class="order-btn">Order - ₹150</button>
+                    </div>
+                    <div class="food-item" data-price="120">
+                        <img src="burger.jpg" alt="Burger">
+                        <p>Burger</p>
+                        <input type="number" class="quantity" value="1" min="1">
+                        <button class="order-btn">Order - ₹120</button>
+                    </div>
+                    <div class="food-item" data-price="50">
+                        <img src="samosa.jpeg" alt="Samosa">
+                        <p>Samosa</p>
+                        <input type="number" class="quantity" value="1" min="1">
+                        <button class="order-btn">Order - ₹50</button>
+                    </div>
+                    <div class="food-item" data-price="60">
+                        <img src="puffs.jpg" alt="Puffs">
+                        <p>Vegetable Puffs</p>
+                        <input type="number" class="quantity" value="1" min="1">
+                        <button class="order-btn">Order - ₹60</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Restaurant: Jeevan -->
+            <div class="restaurant">
+                <h3>Jeevan Restaurant</h3>
+                <div class="food-grid">
+                    <div class="food-item" data-price="30">
+                        <img src="chappathi.jpg" alt="Chappathi">
+                        <p>Chappathi</p>
+                        <input type="number" class="quantity" value="1" min="1">
+                        <button class="order-btn">Order - ₹30</button>
+                    </div>
+                    <div class="food-item" data-price="15">
+                        <img src="dosa.jpg" alt="Dosa">
+                        <p>Dosa</p>
+                        <input type="number" class="quantity" value="1" min="1">
+                        <button class="order-btn">Order - ₹15</button>
+                    </div>
+                    <div class="food-item" data-price="20">
+                        <img src="vadai.jpeg" alt="Vadai">
+                        <p>Vadai</p>
+                        <input type="number" class="quantity" value="1" min="1">
+                        <button class="order-btn">Order - ₹20</button>
+                    </div>
+                    <div class="food-item" data-price="45">
+                        <img src="porotta.webp" alt="Porotta">
+                        <p>Porotta</p>
+                        <input type="number" class="quantity" value="1" min="1">
+                        <button class="order-btn">Order - ₹45</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Restaurant: KFC -->
+            <div class="restaurant">
+                <h3>KFC</h3>
+                <div class="food-grid">
+                    <div class="food-item" data-price="300">
+                        <img src="chick.jpeg" alt="Fried Chicken">
+                        <p>Fried Chicken</p>
+                        <input type="number" class="quantity" value="1" min="1">
+                        <button class="order-btn">Order - ₹300</button>
+                    </div>
+                    <div class="food-item" data-price="250">
+                        <img src="frenchfries.jpeg" alt="French Fries">
+                        <p>French Fries</p>
+                        <input type="number" class="quantity" value="1" min="1">
+                        <button class="order-btn">Order - ₹250</button>
+                    </div>
+                    <div class="food-item" data-price="350">
+                        <img src="popcornchicken.jpg" alt="Popcorn Chicken">
+                        <p>Popcorn Chicken</p>
+                        <input type="number" class="quantity" value="1" min="1">
+                        <button class="order-btn">Order - ₹350</button>
+                    </div>
+                    <div class="food-item" data-price="180">
+                        <img src="corn.jpeg" alt="Corn on the Cob">
+                        <p>Corn on the Cob</p>
+                        <input type="number" class="quantity" value="1" min="1">
+                        <button class="order-btn">Order - ₹180</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Restaurant: Domino's -->
+            <div class="restaurant">
+                <h3>Domino's</h3>
+                <div class="food-grid">
+                    <div class="food-item" data-price="500">
+                        <img src="pizza.jpeg" alt="Pizza">
+                        <p>Margherita Pizza</p>
+                        <input type="number" class="quantity" value="1" min="1">
+                        <button class="order-btn">Order - ₹500</button>
+                    </div>
+                    <div class="food-item" data-price="550">
+                        <img src="peppizza.jpg" alt="Pepperoni Pizza">
+                        <p>Pepperoni Pizza</p>
+                        <input type="number" class="quantity" value="1" min="1">
+                        <button class="order-btn">Order - ₹550</button>
+                    </div>
+                    <div class="food-item" data-price="150">
+                        <img src="garlicbread.jpeg" alt="Garlic Bread">
+                        <p>Garlic Bread</p>
+                        <input type="number" class="quantity" value="1" min="1">
+                        <button class="order-btn">Order - ₹150</button>
+                    </div>
+                    <div class="food-item" data-price="99">
+                        <img src="brownie.jpeg" alt="Chocolate Brownie">
+                        <p>Chocolate Brownie</p>
+                        <input type="number" class="quantity" value="1" min="1">
+                        <button class="order-btn">Order - ₹99</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Order Summary -->
+        <div id="order-summary" style="display:none;">
+            <h2>Your Order</h2>
+            <div id="order-items"></div>
+            <h3>Total: ₹<span id="total-amount">0</span></h3>
+        </div>
+
+<div id="customer-details" style="display:none;">
+    <h2>Enter Delivery Details</h2>
+    <form id="delivery-form">
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" placeholder="Enter your full name" required><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" placeholder="Enter your delivery address" required></textarea><br>
+
+        <label for="contact">Contact Number:</label>
+        <div class="contact-wrapper">
+            <select id="country-code">
+                <option value="+91">+91 (IN)</option>
+                <option value="+1">+1 (US)</option>
+                <option value="+44">+44 (UK)</option>
+                <!-- Add more country codes as needed -->
+            </select>
+            <input type="tel" id="contact" placeholder="1234567890" required>
+        </div>
+
+        <label for="delivery-time">Preferred Delivery Time:</label>
+        <select id="delivery-time">
+            <option value="ASAP">As Soon As Possible</option>
+            <option value="12pm-1pm">12:00 PM - 1:00 PM</option>
+            <option value="1pm-2pm">1:00 PM - 2:00 PM</option>
+            <option value="6pm-7pm">6:00 PM - 7:00 PM</option>
+            <!-- Add more time slots as needed -->
+        </select><br>
+
+        <button id="submit-details" type="submit">Submit Delivery Details</button>
+    </form>
+</div>
+
+<!-- Payment Section -->
+<div id="payment" style="display:none;">
+    <h2>Payment Method</h2>
+
+    <label for="payment-method">Choose Payment Method:</label>
+    <select id="payment-method">
+        <option value="cod">Cash on Delivery</option>
+        <option value="card">Credit/Debit Card</option>
+        <option value="upi">UPI</option>
+        <option value="wallet">Digital Wallet (Paytm, PhonePe)</option>
+    </select>
+
+    <!-- Card Payment Fields -->
+    <div id="card-options" class="payment-option" style="display:none;">
+        <h3>Pay with Card</h3>
+        <label for="card-number">Card Number:</label>
+        <input type="text" id="card-number" placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="16"><br>
+
+        <label for="card-expiry">Expiry Date:</label>
+        <input type="text" id="card-expiry" placeholder="MM/YY" maxlength="5"><br>
+
+        <label for="card-cvv">CVV:</label>
+        <input type="text" id="card-cvv" placeholder="XXX" maxlength="3"><br>
+    </div>
+
+    <!-- UPI Payment Fields -->
+    <div id="upi-options" class="payment-option" style="display:none;">
+        <h3>Pay with UPI</h3>
+        <button class="upi-btn">GPay</button>
+        <button class="upi-btn">PhonePe</button>
+        <button class="upi-btn">Paytm</button>
+    </div>
+
+    <!-- Wallet Payment Fields -->
+    <div id="wallet-options" class="payment-option" style="display:none;">
+        <h3>Pay with Digital Wallet</h3>
+        <label for="wallet-id">Wallet ID:</label>
+        <input type="text" id="wallet-id" placeholder="Enter your Wallet ID"><br>
+    </div>
+
+    <button id="confirm-order">Confirm Order</button>
+</div>
+
+
+    </main>
+
+    <footer>
+        <p>&copy;   Hungry-Buddy  | Your favorite meals delivered fast</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
